@@ -7,35 +7,45 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header></header>
-    <h1>AI Recipe Generator</h1>
-    </header>
-    <main>
-        <form action="">
-            <input type="text" placeholder="Enter main ingredient"
-             autofocus 
-             required 
-             autocomplete="off"
-             /> 
-            <input type="submit"/>
-            <div>
-                Your recipe 
-            </div>
+    <div class="container">
+      <header>
+        <h1>AI Recipe Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form class="">
+            <input
+              type="text"
+              placeholder="Enter main ingredient"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+             </form>
+             <div class="hint">i.e: Beef, broccoli or cheese</div>
+        </div>
+    
+            
+          </form> 
+       <div class="recipe hidden" id="recipe"></div>
+      </main>
 
-        </form>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/MGosa" target="_blank">Monika Gosa</a>
-      and is open-sourced on
-      <a href="https://github.com/MGosa/recipe-generator" target="_blank">
-        GitHub</a
-      >
-      and is hosted on
-      <a href="https://recipeideasgenerator.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/MGosa" target="_blank">Monika Gosa</a>
+        and is open-sourced on
+        <a href="https://github.com/MGosa/recipe-generator" target="_blank">
+          GitHub</a
+        >
+        and is hosted on
+        <a href="https://recipeideasgenerator.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
